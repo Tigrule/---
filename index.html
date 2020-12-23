@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="roll">
+<div id="roll">
     <h3>KATEGORIER</h3>
     <ul>
         <li><a href="">electronik</a></li>
@@ -29,7 +29,19 @@
     <div class="header-wrap">
         <div class="logo"><img src="img/bilka-logo.svg" alt="logo"></div>
         <div class="nav-wrap">
-            <nav></nav>
+            <nav onclick="roll()">
+                <img src="img/navicon.png" alt="nav">
+                <span>MENU</span>
+                <script type="text/javascript">
+                    function roll() {
+                        let a = document.getElementById('roll');
+                        if (parseInt(a.style.left)<0) {
+                            a.style.left = '0';
+                        }
+                        else {a.style.left = '-300px'}
+                    }
+                    </script>
+            </nav>
         </div>
         <div class="cont-wrap">
             <img src="img/tel.PNG" alt="contact">
@@ -113,27 +125,23 @@
                 </div>
                 <div class="main-wrap__text-block">
                     <h1>Sådan understøtter du den gode leg</h1>
-                    <p>Som forældre kan det af og til være svært at finde kreativiteten frem efter en lang dag på
-                        arbejde. Både børn og voksne er sultne og trætte i ulvetimen, og der er mange gøremål, der lige
-                        skal klares. Børns evner til at lege kommer ikke fuldstændigt af sig selv, men skal tit have
-                        lidt hjælp fra de voksne.
+                    <p>Forældre har undertiden svært ved at finde tid til at være kreative. Både børn og voksne bliver
+                        trætte og sultne i "ulve-timen" og har mange gøremål rundt omkring i huset.
+                        Frihed. Børns evne til at lege kommer ikke af sig selv, men der er ofte brug for lidt hjælp fra
+                        ældre.
+                        Du kan hjælpe dit barn ved at oprette et legerum eller stuehjørne til at lege med. Behagelig
+                        gulvplads og klarhed i legetøjet gør processen let. Børn er mere tilbøjelige til at lege med
+                        tilgængelige ting, der er lette at komme til, og han bliver ikke forvirret. Jo mindre barnet er,
+                        jo tættere er det på sine forældre. Så kan det være praktisk at flytte spillet til det rum, hvor
+                        du slap. Mange børns spil er inspireret af det, de ser omkring dem. Derfor vil børn ofte nyde at
+                        lege længere i deres yndlingsunivers med deres yndlingstegninger eller figurer eller lege med
+                        noget, der kan efterligne daglige aktiviteter. Et kreativt legetøj, hvor barnet endda har evnen
+                        til at skabe, farve og opbygge sit eget univers, er også populært hos mange børn.
 
-                        I kan hjælpe barnet ved at indrette børneværelset eller et hjørne af jeres opholdsrum til leg.
-                        Godt med gulvplads at lege på og overskuelighed i legetøjet gør det nemmere at lege selv. Børn
-                        leger mest med de ting, de nemmest kan komme til og umiddelbart kan se. Det kan være smart at
-                        have en begrænset mængde yndlingslegetøj fremme og rotere nogle gennemsigtige kasser rundt - så
-                        bliver det ikke for uoverskueligt for barnet. Jo yngre barnet er, jo tættere vil de ofte være på
-                        forældre. Så kan det være praktisk at flytte legen ud i det rum, hvor man selv opholder sig.
-
-                        Meget af børns leg bliver inspireret af det, de ser og oplever omkring sig. Derfor vil børn tit
-                        gerne lege videre inden for deres yndlingsunivers med favorittegnefilmen eller actionfigurerne -
-                        eller lege med noget, hvor de kan efterligne hverdagsaktiviteter. Kreativt legetøj, hvor barnet
-                        selv kan skabe, male og opbygge sit eget univers er også populært hos mange børn.
-
-                        Under den frie leg skal børnene skal selv have lov til at bestemme hvad de vil lege og hvordan,
-                        uden at voksne skal blande sig. Som forældre kan man hjælpe med at finde det rigtige legetøj
-                        frem, men ellers blande sig udenom og lade barnet finde ud af det selv - det kan de nemlig
-                        sagtens.</p>
+                        Under gratis leg skal børn have lov til selv at bestemme, hvad de vil lege, og hvordan,
+                        uden indblanding fra voksne. Som forælder kan du hjælpe med at finde det rigtige legetøj
+                        fremad, men ellers blande sig og lade barnet finde ud af det selv - det kan de
+                        let.</p>
                 </div>
             </div>
         </div>
@@ -142,5 +150,6 @@
 <footer>
 
 </footer>
+
 </body>
 </html>

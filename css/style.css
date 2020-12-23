@@ -11,6 +11,11 @@ header {
     height: 70px;
 }
 
+header nav {
+    display: flex;
+    font-size: 70px;
+}
+
 .banner {
     background: #ffffff url(../img/banner.jpg) center;
     width: 98%;
@@ -86,6 +91,7 @@ main {
 }
 
 .main-wrap__text-block p {
+    line-height: 1.7em;
     color: #222222;
 }
 
@@ -94,7 +100,7 @@ footer {
     height: 70px;
 }
 
-.roll {
+#roll {
     position: fixed;
     background: white;
     padding: 20px;
@@ -102,12 +108,13 @@ footer {
     border: #bbbbbb solid;
     width: 300px;
     left: -300px;
-    top 0;
+    top: 0;
     z-index: 3;
+    transition: left 250ms;
 }
-.roll:hover {
-    left: 0;
-}
+/*.roll:hover {*/
+/*    left: 0;*/
+/*}*/
 
 .roll li a {
     color: #3a68e0;
@@ -117,4 +124,29 @@ footer {
 .roll ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+@media screen and (max-device-width: 750px)/* and (max-device-width: 750px)*/{
+
+    .catalog {
+        /*display: block;*/
+        flex-direction: column;
+        /*justify-content: center;*/
+
+    }
+    .catalog__item {
+        /*display: inline-block;*/
+        width: 100%;
+        font-size: 200%;
+    }
+    .catalog img {
+        width: 70%;
+    }
+
+    .main-wrap__text-block {
+        font-size: small;
+        padding: 20px;
+        line-height: 2.5em;
+    }
+
 }
