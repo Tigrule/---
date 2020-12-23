@@ -1,3 +1,6 @@
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
 header {
     height: 70px;
     padding: 3px 10px;
@@ -32,14 +35,16 @@ main {
 
 .main-wrap__catalog{
     padding: 3px 10px;
-    margin: 20px 3px;
+    margin: 20px auto;
     text-align: center;
 }
 
 .catalog {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .catalog__item {
@@ -66,4 +71,50 @@ main {
 
 .price {
 
+}
+
+.main-wrap__text-block {
+    border: 1px solid #999999;
+    /*width: 90%;*/
+    position: relative;
+    padding: 30px;
+    margin: 10px auto;;
+}
+
+.main-wrap__text-block h1 {
+    color: #888ea1
+}
+
+.main-wrap__text-block p {
+    color: #222222;
+}
+
+footer {
+    background: #888ea1;
+    height: 70px;
+}
+
+.roll {
+    position: fixed;
+    background: white;
+    padding: 20px;
+    font-size: x-large;
+    border: #bbbbbb solid;
+    width: 300px;
+    left: -300px;
+    top 0;
+    z-index: 3;
+}
+.roll:hover {
+    left: 0;
+}
+
+.roll li a {
+    color: #3a68e0;
+    text-decoration: none;
+}
+
+.roll ul {
+    list-style-type: none;
+    padding-left: 0;
 }
