@@ -8,43 +8,14 @@
 
 </head>
 <body>
-<div id="roll">
-    <h3>KATEGORIER</h3>
-    <ul>
-        <li><a href="index.html">hjem</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="">Produkter</a></li>
-        <li><a href="">4</a></li>
-        <li><a href="">5</a></li>
-        <li><a href="">6</a></li>
-        <li><a href="">7</a></li>
-        <li><a href="">8</a></li>
-        <li><a href="">9</a></li>
-        <li><a href="">10</a></li>
-        <li><a href="">11</a></li>
-        <li><a href="">12</a></li>
-        <li><a href="">13</a></li>
-        <li><a href="">14</a></li>
-    </ul>
-</div>
 <header>
     <div class="header-wrap">
         <div class="logo"><img src="img/bilka-logo.svg" alt="logo"></div>
-        <div class="nav-wrap">
-            <nav>
-                <img src="img/navicon.png" alt="nav" onclick="roll()">
-                <span onclick="roll()">MENU</span>
-                <script type="text/javascript">
-                    function roll() {
-                        let a = document.getElementById('roll');
-                        if (parseInt(a.style.left)<0) {
-                            a.style.left = '0';
-                        }
-                        else {a.style.left = '-300px'}
-                    }
-                </script>
-            </nav>
-        </div>
+        <nav>
+            <div class="nav__item"><a href="index.html">Hjem</a></div>
+            <div class="nav__item"><a href="privacy.html">Privacy</a></div>
+            <div class="nav__item"><a href="cat.html">Produkter</a></div>
+        </nav>
         <div class="cont-wrap">
             <img src="img/tel.PNG" alt="contact">
         </div>

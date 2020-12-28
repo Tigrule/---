@@ -8,52 +8,37 @@
 
 </head>
 <body>
-<div id="roll">
-    <h3>KATEGORIER</h3>
-    <ul>
-        <li><a href="index.html">hjem</a></li>
-        <li><a href="">Privacy</a></li>
-        <li><a href="terms.html">Produkter</a></li>
-        <li><a href="">4</a></li>
-        <li><a href="">5</a></li>
-        <li><a href="">6</a></li>
-        <li><a href="">7</a></li>
-        <li><a href="">8</a></li>
-        <li><a href="">9</a></li>
-        <li><a href="">10</a></li>
-        <li><a href="">11</a></li>
-        <li><a href="">12</a></li>
-        <li><a href="">13</a></li>
-        <li><a href="">14</a></li>
-    </ul>
-</div>
 <header>
     <div class="header-wrap">
         <div class="logo"><img src="img/bilka-logo.svg" alt="logo"></div>
-        <div class="nav-wrap">
-            <nav>
-                <img src="img/navicon.png" alt="nav" onclick="roll()">
-                <span onclick="roll()">MENU</span>
-                <script type="text/javascript">
-                    function roll() {
-                        let a = document.getElementById('roll');
-                        if (parseInt(a.style.left) < 0) {
-                            a.style.left = '0';
-                        } else {
-                            a.style.left = '-300px'
-                        }
-                    }
-                </script>
-            </nav>
-        </div>
+        <nav>
+            <div class="nav__item"><a href="index.html">Hjem</a></div>
+            <div class="nav__item"><a href="privacy.html">Privacy</a></div>
+            <div class="nav__item"><a href="cat.html">Produkter</a></div>
+        </nav>
         <div class="cont-wrap">
             <img src="img/tel.PNG" alt="contact">
         </div>
     </div>
 </header>
 <main>
-    <div class="privacy">Webstedet bruger cookies, der er nødvendige for hurtigere sideindlæsning. Ved at bruge
-        hjemmesiden giver du samtykke til lagring af cookies på din computer.
+    <div class="privacy">
+        <p>Vi opdaterer vores fortrolighedspolitik som forberedelse til EU's generelle databeskyttelsesforordninger
+            (GDPR) senere på denne måned. Selvom disse ændringer er ansporet af europæisk lov, mener vi, at privatlivets
+            fred er super vigtigt, og derfor gælder disse ændringer for alle, uanset hvor du befinder dig.</p>
+
+        <p>Her er et hurtigt resume:</p>
+
+        <p>Vi beder ikke om at indsamle flere data eller bruge dine personlige data forskelligt - i stedet for er vi
+            mere specifikke for, hvordan vi bruger de oplysninger, vi indsamler, hvor længe vi opbevarer disse data og
+            de rettigheder, du har angående dem.</p>
+
+        <p>Som en del heraf tilføjer vi også oplysninger om, hvordan du kan kontrollere brugen af dine personlige data
+            og downloade de data, du har givet os.</p>
+
+        <p>Endelig giver vi mere klarhed omkring de juridiske baser, vi bruger til at behandle dine oplysninger,
+            herunder levering af tjenesten til dig, overholdelse af lovgivningen, forbedring af vores tjenester,
+            bekæmpelse af misbrug på systemet og udvikling af nye funktioner til dig.</p>
     </div>
 </main>
 </body>

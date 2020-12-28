@@ -1,19 +1,30 @@
 body {
     font-family: Tahoma, Geneva, sans-serif;
 }
+
 header {
-    height: 70px;
+    height: 40px;
     padding: 3px 10px;
     width: 90%;
     margin: 0 auto;
 }
+
 .logo img {
-    height: 70px;
+    height: 40px;
+    padding-top: 5px;
 }
 
 header nav {
     display: flex;
-    font-size: 70px;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+.nav__item {
+    padding: 0 10px;
+    height: 40px;
+    vertical-align: top;
+    font-family: "Arial Black", Arial, sans-serif
 }
 
 .banner {
@@ -24,6 +35,7 @@ header nav {
     padding: 3px 10px;
     margin: 40px auto;
 }
+
 /*.banner img {*/
 /*    width: 100%;*/
 /*}*/
@@ -33,12 +45,14 @@ main {
     margin: 0 auto;
     background: #fafafa;
 }
+
 .header-wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.main-wrap__catalog{
+
+.main-wrap__catalog {
     padding: 3px 10px;
     margin: 20px auto;
     text-align: center;
@@ -62,7 +76,7 @@ main {
 }
 
 .cont-wrap img {
-    height: 70px;
+    height: 40px;
 }
 
 .catalog__text {
@@ -100,37 +114,17 @@ footer {
     height: 70px;
 }
 
-#roll {
-    position: fixed;
-    background: white;
-    padding: 20px;
-    font-size: x-large;
-    border: #bbbbbb solid;
-    width: 300px;
-    left: -300px;
-    top: 0;
-    z-index: 3;
-    transition: left 250ms;
-}
-/*.roll:hover {*/
-/*    left: 0;*/
-/*}*/
-
-#roll li a {
-    color: #3a68e0;
+header a {
+    color: #009fe3;
     text-decoration: none;
 }
 
-#roll ul {
-    list-style-type: none;
-    padding-left: 0;
-}
 
 main .privacy {
     margin: 40px 20px;
 }
 
-@media screen and (max-device-width: 750px)/* and (max-device-width: 750px)*/{
+@media screen and (max-device-width: 750px)/* and (max-device-width: 750px)*/ {
 
     .catalog {
         /*display: block;*/
@@ -138,19 +132,47 @@ main .privacy {
         /*justify-content: center;*/
 
     }
+
     .catalog__item {
         /*display: inline-block;*/
         width: 100%;
         font-size: 200%;
     }
+
     .catalog img {
         width: 70%;
     }
 
     .main-wrap__text-block {
-        font-size: small;
+        font-size: medium;
         padding: 20px;
         line-height: 2.5em;
+    }
+    header nav {
+        display: block;
+    }
+
+    .header-wrap{
+        /*display: block;*/
+        flex-direction: column  }
+
+    header {height: auto}
+
+    .nav__item {
+        padding: 5px 0;
+        font-size: 1.2em;
+    }
+
+    .cont-wrap img {
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        margin: 20px;
+        height: 100px;
+    }
+
+    main .main-wrap__text-block p {
+        font-size: 3em;
     }
 
 }
