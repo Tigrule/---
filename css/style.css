@@ -17,7 +17,7 @@ header nav {
 }
 
 .banner {
-    background: #ffffff url(../img/banner.jpg) center;
+    background: #ffffff url(../img/download.jpg) center;
     width: 98%;
     height: 400px;
     background-size: cover;
@@ -124,6 +124,10 @@ footer {
 #roll ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+main .privacy {
+    margin: 40px 20px;
 }
 
 @media screen and (max-device-width: 750px)/* and (max-device-width: 750px)*/{
