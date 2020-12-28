@@ -22,7 +22,7 @@ header nav {
     height: 400px;
     background-size: cover;
     padding: 3px 10px;
-    margin: 13px auto;
+    margin: 40px auto;
 }
 /*.banner img {*/
 /*    width: 100%;*/
@@ -116,12 +116,12 @@ footer {
 /*    left: 0;*/
 /*}*/
 
-.roll li a {
+#roll li a {
     color: #3a68e0;
     text-decoration: none;
 }
 
-.roll ul {
+#roll ul {
     list-style-type: none;
     padding-left: 0;
 }
