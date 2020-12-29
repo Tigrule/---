@@ -165,19 +165,26 @@ main .privacy {
 
     .nav__item {
         padding: 5px 0;
-        font-size: 1.2em;
+        margin: 5px;
+        font-size: 1.4em;
     }
 
-    .cont-wrap img {
+    .cont-wrap {
         position: absolute;
         right: 20px;
         top: 5px;
         margin: 20px;
         height: 100px;
+        font-size: 36px;
     }
 
-    main .main-wrap__text-block p {
+    .main-wrap__text-block {
         font-size: 3em;
+        margin-top: 20px;
     }
+    main {
+        border: none;
+    }
+
 
 }
